@@ -1,0 +1,62 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #000000;
+  --border-color: #000000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --link-color: #ffffff;
+  --border-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+header, footer {
+  background-color: var(--bg-color);
+  border-color: var(--border-color);
+}
+
+header {
+  padding: 1em 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+main {
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 2em 0;
+  border-top: 1px solid var(--border-color);
+}
