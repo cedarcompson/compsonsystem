@@ -1,7 +1,7 @@
 :root {
   --primary-color: #ffffff;
   --accent-color: #ffffff;
-  --background-color: #000000;
+  --background-color: #ffffff;
   --text-color: #000000;
   --link-hover: #000000;
   --font-body: 'Atkinson Hyperlegible', sans-serif;
@@ -18,7 +18,7 @@ body {
 
 header {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--text-color);
   padding: 2rem 1rem 1rem;
   text-align: center;
 }
