@@ -1,62 +1,72 @@
 :root {
-  --bg-color: #ffffff;
+  --primary-color: #f2781b;
+  --accent-color: #d4ccc5;
+  --background-color: #ffffff;
   --text-color: #000000;
-  --link-color: #000000;
-  --border-color: #000000;
-}
-
-[data-theme="dark"] {
-  --bg-color: #000000;
-  --text-color: #ffffff;
-  --link-color: #ffffff;
-  --border-color: #ffffff;
+  --link-hover: #a18977;
+  --font-body: 'Atkinson Hyperlegible', sans-serif;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-family: var(--font-body);
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-header, footer {
-  background-color: var(--bg-color);
-  border-color: var(--border-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 header {
-  padding: 1em 0;
-  border-bottom: 1px solid var(--border-color);
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem 1rem 1rem;
   text-align: center;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 15px;
+nav {
+  margin-top: 0.5rem;
 }
 
-nav ul li a {
+nav a {
+  margin: 0 1rem;
+  color: var(--link-hover);
   text-decoration: none;
-  color: var(--link-color);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+  text-shadow: 0 0 1px var(--accent-color);
 }
 
 main {
-  max-width: 700px;
-  margin: 2em auto;
-  padding: 0 1em;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 footer {
+  background-color: var(--primary-color);
+  color: #ccc;
   text-align: center;
-  font-size: 0.8em;
-  padding: 2em 0;
-  border-top: 1px solid var(--border-color);
+  padding: 0.25rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 400;
+  opacity: 0.75;
+  transition: opacity 0.2s ease, text-shadow 0.2s ease;
+}
+
+footer a:hover {
+  opacity: 1;
+  text-shadow: 0 0 2px var(--accent-color);
+}
+
 }
