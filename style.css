@@ -4,7 +4,7 @@
   --background-color: #ffffff;
   --text-color: #000000;
   --link-hover: #000000;
-  --font-body: 'Atkinson Hyperlegible', sans-serif;
+  --font-body: 'Source Code Pro';
 }
 
 body {
@@ -68,6 +68,14 @@ footer a:hover {
   opacity: 1;
   text-shadow: 0 0 2px var(--accent-color);
 }
+
+.source-code-pro-compsonfont {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 
 }
  
