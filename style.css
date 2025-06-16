@@ -6,10 +6,10 @@
   --link-hover: #000000;
   --font-body: 'Source Code Pro', monospace;
 
-  --font-size-base: 1rem;
-  --font-size-large: 1.2rem;
+  --font-size-base: 0.7rem;
+  --font-size-large: 0.8rem;
   --font-size-title: 1.5rem;
-  --font-size-subtitle: 1.1rem;
+  --font-size-subtitle: 1.0rem;
   --line-height: 1.6;
 }
 
